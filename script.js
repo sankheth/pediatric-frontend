@@ -186,3 +186,4 @@ async function syncGasData() {
 // Check for new gas data every 3 seconds
 
 setInterval(syncGasData, 3000);
+
