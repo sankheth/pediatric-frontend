@@ -188,3 +188,4 @@ async function syncGasData() {
 setInterval(syncGasData, 3000);
 
 
+
