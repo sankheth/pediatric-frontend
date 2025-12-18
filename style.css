@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f8;
+}
+
+.app-header {
+  background: #0f766e;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #115e59;
+}
+
+.hidden {
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th {
+  background: #0f766e;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.stunted { color: #dc2626; font-weight: bold; }
+.normal { color: #16a34a; font-weight: bold; }
+.tall { color: #2563eb; font-weight: bold; }
+.over { color: #ea580c; font-weight: bold; }
+
+.action-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit { background: #2563eb; color: white; }
+.delete { background: #dc2626; color: white; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
