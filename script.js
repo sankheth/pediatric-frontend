@@ -167,7 +167,7 @@ function closest(age, obj) {
 }
 
 render();
-const RENDER_URL = "https://your-backend-name.onrender.com/api/get-gas-data";
+const RENDER_URL = "https://pediatric-backend.onrender.com/api/get-gas-data";
 
 async function syncGasData() {
     try {
@@ -184,4 +184,5 @@ async function syncGasData() {
 }
 
 // Check for new gas data every 3 seconds
+
 setInterval(syncGasData, 3000);
