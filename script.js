@@ -175,8 +175,8 @@ async function syncGasData() {
         const data = await response.json();
         
         // This fills the "Gas Level (PPM)" input in your form automatically
-        if ($("gasLevel")) {
-            $("gasLevel").value = data.gas_value;
+        if (document.getElementById("gasLevel")) {
+           document.getElementById("gasLevel").value = data.gas_value;
         }
     } catch (error) {
         console.log("Waiting for Render to wake up...");
@@ -186,4 +186,5 @@ async function syncGasData() {
 // Check for new gas data every 3 seconds
 
 setInterval(syncGasData, 3000);
+
 
